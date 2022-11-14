@@ -32,13 +32,24 @@ fn main(){
     // - They aren't dynamic, you have to know their lenght: [T; length]
 
     let my_array: [i32; 5] = [1, 2, 3, 4, 5];
+    let _my_array2: [i32; 5] = [420;5];
     let index: usize = 0;
 
     println!("[*] my_array[{0}] = {1}", index, my_array[index]);
     println!("[*] my_array.len() = {0}", my_array.len());
 
     // --- SLICES
+    // - To instatiate them you have to: &[T]
     // - Very similar, but DYNAMIC memory
+
+
+    // Printing an array
+    for i in 0..my_array.len(){
+        println!("{}: {}", i, my_array[i]);
+    }
+
+
+    // 我是去年九月来到了中国的
 
 
 }
