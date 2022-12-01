@@ -53,7 +53,6 @@ fn main() {
 
     println!("Now, x is {}", x);
 
-
     // Declaramos tipo de dato
     // Tenemos string, lo parseamos, esto nos da un Result
     // con .expect() manejamos el error, si no es numero, nos regresa un error
