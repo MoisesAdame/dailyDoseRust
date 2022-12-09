@@ -1,6 +1,6 @@
 // Author: Moisés Adame-Aguilar
 // Date: December 7th, 2022
-// Description: Soluction of chap3 problems of book "Steve Klabnik, Carol 
+// Description: Solution of chap3 problems of book "Steve Klabnik, Carol 
 // Nichols, Rust Community - The Rust Programming Language-No Starch Press (2018)"
 
 fn f2c(fahrenheit_temp: f32) -> f32{

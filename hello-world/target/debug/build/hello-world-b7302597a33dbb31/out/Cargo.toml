@@ -1,0 +1,24 @@
+[dependencies.orig-project]
+default-features = false
+package = 'hello-world'
+path = '/Users/moymac/Library/Mobile Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC3/dailyDoseRust/hello-world'
+
+[features]
+
+[lib]
+crate-type = ['cdylib']
+name = 'hello_world'
+
+[package]
+edition = '2021'
+name = 'hello-world-wasm'
+version = '0.1.0'
+[profile.dev]
+lto = true
+opt-level = 's'
+
+[profile.release]
+lto = true
+opt-level = 's'
+
+[workspace]

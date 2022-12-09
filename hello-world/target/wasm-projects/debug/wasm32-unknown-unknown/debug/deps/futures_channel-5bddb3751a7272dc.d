@@ -1,0 +1,9 @@
+/Users/moymac/Library/Mobile Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC3/dailyDoseRust/hello-world/target/wasm-projects/debug/wasm32-unknown-unknown/debug/deps/futures_channel-5bddb3751a7272dc.rmeta: /Users/moymac/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.25/src/lib.rs /Users/moymac/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.25/src/lock.rs /Users/moymac/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.25/src/oneshot.rs
+
+/Users/moymac/Library/Mobile Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC3/dailyDoseRust/hello-world/target/wasm-projects/debug/wasm32-unknown-unknown/debug/deps/libfutures_channel-5bddb3751a7272dc.rlib: /Users/moymac/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.25/src/lib.rs /Users/moymac/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.25/src/lock.rs /Users/moymac/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.25/src/oneshot.rs
+
+/Users/moymac/Library/Mobile Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC3/dailyDoseRust/hello-world/target/wasm-projects/debug/wasm32-unknown-unknown/debug/deps/futures_channel-5bddb3751a7272dc.d: /Users/moymac/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.25/src/lib.rs /Users/moymac/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.25/src/lock.rs /Users/moymac/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.25/src/oneshot.rs
+
+/Users/moymac/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.25/src/lib.rs:
+/Users/moymac/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.25/src/lock.rs:
+/Users/moymac/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.25/src/oneshot.rs:

@@ -1,0 +1,12 @@
+[0m[0m[1m[32m   Compiling[0m hello-world v0.1.0 (/Users/moymac/Library/Mobile Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC3/dailyDoseRust/hello-world)
+[0m[1m[33mwarning[0m[0m[1m: unused import: `prelude::*`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0m/Users/moymac/Library/Mobile Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC3/dailyDoseRust/hello-world/src/lib.rs:2:17[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0muse gstd::{msg, prelude::*};[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                [0m[0m[1m[33m^^^^^^^^^^[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_imports)]` on by default[0m
+
+[0m[0m[1m[33mwarning[0m[1m:[0m `hello-world` (lib) generated 1 warning (run `cargo fix --lib -p hello-world` to apply 1 suggestion)
+[0m[0m[1m[32m   Compiling[0m hello-world-wasm v0.1.0 (/Users/moymac/Library/Mobile Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC3/dailyDoseRust/hello-world/target/release/build/hello-world-97fa67e6462c7366/out)
+[0m[0m[1m[32m    Finished[0m release [optimized] target(s) in 1.85s
