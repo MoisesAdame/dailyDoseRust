@@ -6,11 +6,13 @@
 #![allow(dead_code)]
 
 // Define the Option enum w/ T data type
+/*
 #[derive(Debug)]
 enum Option<T>{
 	Some(T),
 	None,
 }
+*/
 
 // The match control flow operator
 enum Coin{
@@ -32,6 +34,7 @@ impl Coin{
 	}
 }
 
+#[derive(Clone)]
 struct Node<'a, T>{
 	data: T,
 	next: &'a Option<Node<'a, T>>,
@@ -61,12 +64,15 @@ impl<'a, T: std::fmt::Debug> LinkedList<'a, T>{
 		}
 	}
 
-	fn add_last(&mut self, val: T){
+	
+	fn add_first(&mut self, val: T){
 		match &self.root{
 			Option::None => {
 				self.root = Option::Some(Node::new(val, &Option::None));
 			},
-			Option::Some(Node) => (),
+			Option::Some(Node) => {
+				self.root = Option::Some(Node::new(val, &Option::Some(*Node)));
+			},
 		}
 	}
 }
@@ -75,7 +81,7 @@ impl<'a, T: std::fmt::Debug> LinkedList<'a, T>{
 fn main(){
 
 	let mut list1: LinkedList<i32> = LinkedList::new();
-	list1.add_last(32);
+	//list1.add_last(32);
 
 	//println!("[*] Situation of root = {}", list1.add_last());
 
