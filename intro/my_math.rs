@@ -2,7 +2,6 @@
 // Date: December 9th, 2022
 // Description: Chapter 7, Using Modules to Reuse and Organize Code
 
-
 pub fn factorial(x: u128) -> u128{
 	if x == 0 || x == 1{
 		return 1

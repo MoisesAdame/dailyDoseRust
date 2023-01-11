@@ -6,6 +6,6 @@ mod my_math;
 
 fn main(){
 	for n in 0..5{
-		println!("exp({})={}", n, my_math::exp(n as f32))
+		println!("exp({}) = {}", n, my_math::exp(n as f32))
 	}
 }
