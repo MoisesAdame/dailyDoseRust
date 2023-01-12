@@ -3,7 +3,7 @@
 // Description: Generics for functions & user defined types.
 
 // In Function Definiton.
-fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> &T{
+fn largest<T: PartialOrd>(list: &[T]) -> &T{
 	let mut res: &T = &list[0];
 	for i in list.iter(){
 		if res < i{
