@@ -1,6 +1,6 @@
 // Author: Moisés Adame-Aguilar
 // Date: January 11, 2023
-// Description: Chapter 8, Common collections.
+// Description: Chapter 8, Common collections (Vec<T>).
 
 fn print_vector(v: &Vec<i32>){
 	if v.len() == 0{
