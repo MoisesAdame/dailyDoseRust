@@ -1,5 +1,5 @@
 // Author: Moisés Adame-Aguilar
-// Date: January 11, 2023
+// Date: January 12, 2023
 // Description: Traits.
 
 // Definition: A way to tell the compiler that some types share the same behavior.

@@ -1,5 +1,5 @@
 // Author: Moisés Adame-Aguilar
-// Date: January 11, 2023
+// Date: January 12, 2023
 // Description: Using traits as a module.
 
 #![allow(dead_code)]
