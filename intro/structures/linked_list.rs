@@ -4,13 +4,13 @@
 
 use std::mem::replace;
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 enum Option<T>{
 	None,
 	Some(Box<Node<T>>)
 }
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 struct Node<T> {
 	data: T,
 	next: Option<T>
@@ -27,13 +27,6 @@ impl<T: std::fmt::Debug> Node<T> {
 	fn print(&self){
 		println!("{:?}", self.data);
 	}
-
-	fn is_next_none(&self) -> bool{
-		match &self.next {
-			Option::Some(_) => false,
-			Option::None => true
-		}
-	}
 }
 
 #[derive(Debug)]
@@ -42,7 +35,7 @@ pub struct LinkedList<T> {
 	size: usize
 }
 
-impl<T: std::fmt::Debug> LinkedList<T> {
+impl<T: std::fmt::Debug + std::cmp::PartialEq> LinkedList<T> {
 	// Function for instatinating Linked Lists.
 	pub fn new() -> Self{
 		Self{
@@ -63,21 +56,21 @@ impl<T: std::fmt::Debug> LinkedList<T> {
 	pub fn add_last(&mut self, data: T){
 		let mut temp: &Option<T> = &self.head;
 		self.size += 1;
+		let mut new_tail: &Option<T> = &Option::Some(Box::new(Node::new(data, Option::None)));
 
-		loop{
-			match &mut temp {
-				Option::Some(temp_out) => {
-					temp = &(**temp_out).next;
-				},Option::None => {
-					break;
-				}
+		loop {
+			match &mut temp{
+				Option::Some(temp_out) => replace(&mut temp, &(**temp_out).next),
+				Option::None => &replace(&mut new_tail, &Option::None),
+			};
+
+			if *temp == Option::None && *new_tail == Option::None{
+				println!("Happend: {:?}", self);
+				break;
+			}else{
+				println!("Not Happend");
 			}
 		}
-
-		match &mut temp {
-			Option::None => Option::Some(Box::new(Node::new(data, Option::None))),
-			_ => Option::None
-		};
 	}
 
 	// Function that returns the number of nodes in the Linked List.

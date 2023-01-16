@@ -14,8 +14,11 @@ fn main(){
 	}
 
 	list1.add_last(25);
+	// list1.add_last(25);
+	// list1.add_last(25);
+	// list1.add_last(25);
 
 	list1.print();
 
-	println!("Size: {:?}", list1.len());
+	//println!("Size: {:?}", list1);
 }
