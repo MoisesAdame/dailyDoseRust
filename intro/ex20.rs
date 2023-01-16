@@ -4,14 +4,16 @@
 
 #![allow(dead_code)]
 
-mod linked_list;
+mod structures;
 
 fn main(){
-	let mut list1: linked_list::LinkedList<u32> = linked_list::LinkedList::new();
+	let mut list1: structures::linked_list::LinkedList<u32> = structures::linked_list::LinkedList::new();
 
 	for i in 0..10 {
 		list1.add_first(i);
 	}
+
+	list1.add_last(25);
 
 	list1.print();
 
