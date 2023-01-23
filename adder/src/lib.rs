@@ -45,6 +45,10 @@ impl Rectangle{
     fn can_hold(&self, other_rectangle: &Rectangle) -> bool{
         self.area() >= other_rectangle.area()
     }
+
+    fn get_sides(&self) -> u32{
+        4
+    }
 }
 
 
@@ -52,6 +56,9 @@ impl Rectangle{
 mod tests {
     use super::*;
     // #[test] Annotation that indicates that this is a test function.
+    // To run only a function we can use the grammar cargo test foo
+    // To run a set of tests use the grammar cargo test foo_similar_part
+    // For example, to run everything about rectangle, we say cargo test rectangle
     #[test]
     fn add_test() {
         let result = add(2, 2);
@@ -99,5 +106,14 @@ mod tests {
         assert_eq!(rect1.can_hold(&rect2), true);
         assert_eq!(rect1.can_hold(&rect1), true);
         assert_ne!(rect2.can_hold(&rect1), true);
+    }
+
+    // To ignore certain test we use #[ignore]
+    #[test]
+    #[ignore]
+    fn rectangle_get_sides_test(){
+        let rect1: Rectangle = Rectangle::new(25, 28);
+        let number_sides: u32 = rect1.get_sides();
+        assert_eq!(4, number_sides);
     }
 }
