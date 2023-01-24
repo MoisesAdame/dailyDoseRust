@@ -51,6 +51,9 @@ impl Rectangle{
     }
 }
 
+fn main(){
+    println!("Hello World");
+}
 
 #[cfg(test)]
 mod tests {
@@ -116,4 +119,8 @@ mod tests {
         let number_sides: u32 = rect1.get_sides();
         assert_eq!(4, number_sides);
     }
+
+    // Unit tests vs. Integration test. Unit tests are for small, atomic
+    // pieces of code inside a module. Integration tests are for 
+    // testing that various modules work well together.
 }
