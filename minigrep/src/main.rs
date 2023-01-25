@@ -8,6 +8,11 @@ use minigrep::Config;
 use std::env;
 use std::process;
 
+// To change the enviorement value use:
+// export VAR_NAME=value
+
+// To remove that variable use:
+// unset VAR_NAME
 fn main() {
     let args: Vec<String> = env::args().collect();
 
